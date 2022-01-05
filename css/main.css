@@ -45,9 +45,10 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #457B9D;
   margin: 1em 0;
   padding: 0;
+ 
 }
 
 /*
@@ -83,10 +84,227 @@ textarea {
   resize: vertical;
 }
 
+/* Fonts */
+    /*  font-family: 'Alike', serif;
+        font-family: 'Open Sans', sans-serif; */
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color:#000;
+    text-align: left;
+}
 
+ul,
+ol {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Alike', serif;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.875em;
+}
+h3 {
+  font-size: 1.5em;
+} 
+
+h4 {
+  font-size: 1.25em;
+}
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+img {
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 100%;
+}
+/* Header */
+
+header {
+  background-color: #F1FAEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 90%;
+  height: 80px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  font-size: 0.875em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header nav ul li:last-child a{
+  background-color: #E63946;
+  color:#fff;
+  border-radius: 500px;
+  padding: 5px 10px;
+}
+header nav ul li:last-child a:hover {
+  background-color: #F6B6BC;
+  color: #000;
+}
+
+.banner h3{
+  width: 75%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hr-header, .hr-about {
+  margin-top: 0px;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+/* .projects h2 {
+  text-align: center;
+} */
+
+.project-piece {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-piece img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border: 0.5px solid black; */
+}
+.project-piece h4 {
+  margin-bottom: 10px;
+}
+.project-piece p {
+  text-align: left;
+  width: 80%;
+}
+
+.project-description.skills {
+  margin-bottom:0px;
+}
+.project-description.tools {
+  margin-top:0px;
+  margin-bottom:30px;
+}
+
+.project-description span {
+  font-weight: bold;
+}
+
+.project-link {
+  text-decoration: none;
+  background-color: #1D3557;
+  color:#fff;
+  border-radius: 500px;
+  padding: 0.75em 1.25em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.hr-projects {
+  margin-bottom: 0px;
+}
+
+#skills {
+  background-color: #F1FAEE;
+}
+
+#skills .content-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.skills-header {
+  margin-top: 50px;
+}
+
+#skills p {
+  font-size: 1.125em;
+  text-transform: uppercase;
+}
+
+.language-wrapper p, .tool-wrapper p {
+  background-color: #A8DADC;
+  padding: 15px 30px;
+  margin: 20px 0;
+}
+
+#about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; 
+  text-align: center;
+}
+#about .content-wrapper {
+  display: block;
+
+}
+
+.about-info {
+  display: block;
+  width:85%;
+  margin:auto;
+}
+
+.about-info p {
+  text-align: left;
+}
+
+.about-info span {
+  font-weight: bold;
+}
+
+
+#contact {
+  background-color: #F1FAEE;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

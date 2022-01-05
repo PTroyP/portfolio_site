@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alike&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <!-- Header -->
       <header>
-          <nav>
+        <div class="content-wrapper">
+          <nav class="nav-section">
               <ul>
                   <li><a href="#projects">projects</a></li>
                   <li><a href="#skills">skills</a></li>
@@ -16,15 +23,17 @@
                   <li><a href="#contact">contact me</a></li>
               </ul>
           </nav>
+        </div>
+        <section class="banner">
+          <div class="content-wrapper">
+              <h1>Hi, I'm Troy Parker!</h1>
+              <h3>I'm a Front End Web Developer who creates beautiful, memorable websites in Shreveport, LA.</h3>
+          </div>
+        </section>
+       
       </header>
-      <main>
-          <!--Banner/Top  -->
-          <section>
-            <div>
-                <h1>Hi, I'm Troy Parker!</h1>
-                <h3>I'm a Front End Web Developer who creates beautiful, memorable websites in Shreveport, LA.</h3>
-            </div>
-          </section>
+      <hr class="hr-header">
+      <main>          
           <!-- Projects -->
           <section class="projects">
             <h2>Projects</h2>
@@ -36,11 +45,11 @@
                   <h4>Unplugged</h4>
                   <p class="project-description">Unplugged” is a responsive, multi-page, mobile-first website, created from a psd design comp.  Flexbox, media queries, and responsive typography allowed for the visual adjustment going from mobile to tablet to desktop screen sizes.
                   </p>
-                  <p>
+                  <p class="project-description skills">
                     <span>Skills: </span>
                     HTML, CSS, Flexbox, Media Queries
                   </p>
-                  <p>
+                  <p class="project-description tools">
                     <span>Tools: </span>
                     Text Editors, Chrome DevTools, Github, Photoshop
                   </p>
@@ -53,11 +62,11 @@
                   <h4>Super Sticky Notes</h4>
                   <p class="project-description">Greenfield project creating a Sticky Notes web app. Uses mulitple components to build the classic sticky note UI with the ability to add, edit, delete and search for notes.
                   </p>
-                  <p>
+                  <p class="project-description skills">
                     <span>Skills: </span>
                     React, JSX, Components, Managing data flow, Manipulating the DOM
                   </p>
-                  <p>
+                  <p class="project-description tools">
                     <span>Tools: </span>
                     CodeSandbox, Props, State
                   </p>
@@ -69,11 +78,11 @@
                   </figure>
                   <h4>Parakaleo Bookkeeping</h4>
                   <p class="project-description">The “Parakaleo Bookkeeping" project is a static responsive website built for an online bookkeeping business.  Used Adobe XD to create the mobile-first design, and Media Queries to adjust to screen sizes.</p>
-                  <p>
+                  <p class="project-description skills">
                     <span>Skills: </span>
                     HTML5, CSS, Flexbox, Media Queries, Basic Design, Responsive Typography
                   </p>
-                  <p>
+                  <p class="project-description tools">
                     <span>Tools: </span>
                     Text Editors, Adobe XD, Photoshop, Github
                   </p>
@@ -85,11 +94,11 @@
                   </figure>
                   <h4>Accelerate (Wordpress)</h4>
                   <p class="project-description">“Accelerate” is a Wordpress project designed for a desktop screen.  Working with a child theme, it allowed for creativity and adjustment in several of the php templates, including the front page and an addition of a case study page.</p>
-                  <p>
+                  <p class="project-description skills">
                     <span>Skills: </span>
                     HTML5, CSS, Flexbox, FTP & Web Hosting
                   </p>
-                  <p>
+                  <p class="project-description tools">
                     <span>Tools: </span>
                     Text Editors, FTP Client, Photoshop, Github
                   </p>
@@ -101,11 +110,11 @@
                   </figure>
                   <h4>Github Repo Gallery</h4>
                   <p class="project-description">Uses GitHub's API to pull data from my GitHub portfolio to create a gallery of repos. Visitors to the site can click on the repos to see more details and a link to the repo.</p>
-                  <p>
+                  <p class="project-description skills">
                     <span>Skills: </span>
                     JavaScript, Manipulate the DOM
                   </p>
-                  <p>
+                  <p class="project-description tools">
                     <span>Tools: </span>
                     APIs, Github
                   </p>
@@ -113,7 +122,7 @@
                 </div>
             </div>
             </section>
-
+            <hr class="hr-projects">
             <!-- Skills Section -->
             <section id="skills">
             <div class="content-wrapper">
@@ -123,7 +132,7 @@
                   <p class="skill">HTML and CSS</p>
                   <p class="skill">JavaScript</p>
                   <p class="skill">React</p>
-                  <p class="skill">Responsive Web Development</p>
+                  <p class="skill">Responsive Websites</p>
                   <p class="skill">WordPress</p>
                   <p class="skill">Git and Github</p>
                 </div>
@@ -138,21 +147,25 @@
             </div>
 
           </section>
+          <hr class="hr-about">
           <!-- About -->
           <section id="about">
              <div class="content-wrapper">
                 <figure>
-                  <img src="img/avatar.png" alt="profile picture"/>
+                  <img src="img/Troy.12.21circleweb.png" alt="profile picture"/>
                 </figure>
               <div class="about-info">
-                  <h3>Hi! I'm Troy Parker.</h3>
+                  <h2>Hi! I'm Troy Parker.</h2>
                   <h3>I’m a front-end web developer who loves coding. </h3>
                   <p>I have years of experience networking with people, problem solving,  and helping others accomplish their goals.  My focus as a front-end developer is to create attractive websites with crisp, clean code.
                   </p>
                   <p>Growing up, I was one of those kids who would take something apart to see how it worked.  I still have that curiosity, and was drawn to development because it has the feel of solving complex puzzles.  
-                    Once I figure it out, something beautiful is displayed on my monitor - either functionally or graphically!   Layout and design have also been passions of mine.  Years ago, when desktop publishing programs became available, 
+                    Once I figure it out, something beautiful is displayed on my monitor - either functionally or graphically!
+                  </p>   
+                    <p>Layout and design have also been passions of mine.  Years ago, when desktop publishing programs became available, 
                     I was mesmerized for hours and was amazed by what I could create on my screen.  Front-end development has become a perfect blend of things I love to do.  And by learning to code, my “toolbox” has gotten a lot bigger.
-                    When I'm not coding, I'm helping my wife with her hand-made soap business that’s crazy fun!  Never knew you could be that creative with a bar of soap!
+                    </p>
+                    <p>When I'm not coding, I'm helping my wife with her hand-made soap business that’s crazy fun!  Never knew you could be that creative with a bar of soap!
                   </p>
                   <p><span>Can't wait to work with you!</span></p>
               </div>
@@ -160,13 +173,15 @@
           </section>
         </main>
           <!-- Contact Me-->
-          <footer>
+          <footer id="contact">
+            <hr class="hr-contact">
+
               <div class="content-wrapper">
                 <h3>Let's Connect</h3>
                   <div class="contact-info">    
                     <h4 class="contact-title">Hire me</h4>
                     <p>318-455-5686</p>
-                    <p>troy@troyparkerweb.comment-author</p>
+                    <p>troy@troyparkerweb.com</p>
                   </div>
                   <div class="content-follow">
                       <h4 class="contact-title">Follow Me</h4>
