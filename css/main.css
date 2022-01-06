@@ -46,7 +46,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #457B9D;
-  margin: 1em 0;
+  margin: 1rem 0;
   padding: 0;
  
 }
@@ -93,7 +93,7 @@ textarea {
 /* General Styles */
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
     color:#000;
     text-align: left;
 }
@@ -107,28 +107,28 @@ h1, h2, h3, h4 {
   font-family: 'Alike', serif;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 h2 {
-  font-size: 1.875em;
+  font-size: 1.875rem;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 } 
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 p {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 img {
   width: 100%;
 }
 
 .content-wrapper {
-  width: 100%;
+  width: 85%;
 }
 /* Header */
 
@@ -160,7 +160,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
@@ -190,15 +190,23 @@ header nav ul li:last-child a:hover {
   margin: 0px;
 }
 
-.projects {
+#projects {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
 }
-.projects h2 {
+#projects h2 {
   margin-top: 80px;
   margin-bottom: 20px;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+
 }
 
 .project-piece {
@@ -206,11 +214,13 @@ header nav ul li:last-child a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-.projects figure {
+#projects figure {
   margin-top: 0;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .project-piece img {
@@ -282,7 +292,7 @@ header nav ul li:last-child a:hover {
 }
 
 #skills p {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   text-transform: uppercase;
 }
 
@@ -380,7 +390,7 @@ header nav ul li:last-child a:hover {
 }
 .social-icons li{
   display: inline-block;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   padding: 0 5px;
 
 }
@@ -482,7 +492,66 @@ header nav ul li:last-child a:hover {
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
 
+  .content-wrapper {
+    max-width: 640px;
+  }
+  
+  header {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  header .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .nav-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  header nav ul {
+    width: 80%;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+  }
 
+  .banner-title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .banner-title h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-title h3 {
+    max-width: 83%;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+
+  #projects {
+    padding-top: 120px;
+  }
+  #projects .content-wrapper {
+    /* margin-top: 120px; */
+  }
+  #projects h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+  .project-wrapper {
+    justify-content: space-around;
+  }
+  .project-piece {
+    width: 45%;
+  }
 }
 
 @media print,
