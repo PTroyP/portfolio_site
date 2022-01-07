@@ -45,7 +45,6 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #457B9D;
   margin: 1rem 0;
   padding: 0;
  
@@ -186,15 +185,14 @@ header nav ul li:last-child a:hover {
   margin-bottom: 30px;
 }
 
-.hr-header, .hr-about {
-  margin: 0px;
-}
+
 
 #projects {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
+  border-top: 1px solid #457B9D;
 }
 #projects h2 {
   margin-top: 80px;
@@ -580,6 +578,9 @@ header nav ul li:last-child a:hover {
   .project-piece {
     width: 45%;
   }
+  .project-description {
+    width: 100%;
+  }
 
   #skills .content-wrapper {
     padding-bottom: 100px;
@@ -649,6 +650,74 @@ header nav ul li:last-child a:hover {
     font-size: 1.5rem;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+
+  header {
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+
+  .content-wrapper {
+    max-width: 1450px;
+  }
+  header .content-wrapper {
+    justify-content: flex-end;
+  }
+  .nav-section {
+    width: 45%;
+    justify-content: flex-end;
+  }
+
+  .banner-title h1 {
+    font-size: 4rem;
+  }
+  .banner-title h3 {
+    font-size: 2rem;
+    max-width: 70%;
+  }
+
+  #projects {
+    padding-top: 140px;
+  }
+
+  #projects h2 {
+    font-size: 2.5rem;
+  }
+
+  .project-piece {
+    width: 30%;
+  }
+  .project-piece h4 {
+    font-size: 1.5rem;
+  }
+  .project-description {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .project-link {
+    margin-bottom: 80px;
+  }
+
+  #skills {
+    padding-top: 80px;
+    border-top: 1px solid #457B9D;
+  }
+
+  #skills .content-wrapper {
+    width: 900px;
+  }
+  .skills-header {
+    font-size: 2.5rem;
+  }
+
+  .skill, .tool {
+    font-size: 1rem;
+    width: 30%;
+  }
+
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
