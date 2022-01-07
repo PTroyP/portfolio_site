@@ -250,11 +250,12 @@ header nav ul li:last-child a:hover {
 }
 
 .project-link {
+  font-size: 1.125rem;
   text-decoration: none;
   background-color: #1D3557;
   color:#fff;
   border-radius: 500px;
-  padding: 0.75em 1.25em;
+  padding: 1rem 2.75rem;
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 40px;
@@ -633,13 +634,28 @@ header nav ul li:last-child a:hover {
   }
 }
 
+
+@media only screen and (min-width: 1024px) {
+  .content-wrapper {
+    max-width: 900px;
+  }
+  .project-link {
+    font-size: 1.25rem;
+  }
+  .about-info h2 {
+    font-size: 3.5rem;
+  }
+  .about-info h3 {
+    font-size: 1.5rem;
+  }
+}
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
