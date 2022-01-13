@@ -167,7 +167,7 @@ header nav ul li a {
 }
 
 header nav ul li:last-child a{
-  background-color: #E63946;
+  background-color: #A31420;
   color:#fff;
   border-radius: 500px;
   padding: 5px 10px;
@@ -739,6 +739,7 @@ header nav ul li:last-child a:hover {
   }
   .about-info {
     width: 58%;
+    max-width: 750px;
   }
   .about-info h3 {
     font-size: 2rem;
@@ -746,6 +747,7 @@ header nav ul li:last-child a:hover {
   }
   .about-info p {
     font-size: 1.25rem;
+    line-height: 1.75rem;
   }
   #contact .content-wrapper {
     margin-top: 160px;
