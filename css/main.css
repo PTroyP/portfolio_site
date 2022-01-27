@@ -223,7 +223,6 @@ header nav ul li:last-child a:hover {
 
 .project-piece img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* border: 0.5px solid black; */
 }
 .project-piece h4 {
   margin-bottom: 20px;
@@ -261,7 +260,6 @@ header nav ul li:last-child a:hover {
 
 .project-link:hover {
   background-color: #477AC2;
-  /* color: #000; */
 }
 
 #skills {
@@ -357,7 +355,6 @@ header nav ul li:last-child a:hover {
 
 #contact .content-wrapper {
   margin-top: 80px;
-  /* padding-top: 80px; */
   padding-bottom: 16px;
 }
 
@@ -405,9 +402,6 @@ header nav ul li:last-child a:hover {
   align-items: center;
 }
 
-#contact ul {
-  /* width: 100%; */
-}
 .social-icons {
   display: flex;
   justify-content: space-evenly;
@@ -416,7 +410,6 @@ header nav ul li:last-child a:hover {
   margin: 0;
 }
 .social-icons li{
-  /* display: inline-block; */
   font-size: 2.5rem;
   padding: 0 5px;
 
@@ -564,9 +557,6 @@ header nav ul li:last-child a:hover {
 
   #projects {
     padding-top: 120px;
-  }
-  #projects .content-wrapper {
-    /* margin-top: 120px; */
   }
   #projects h2 {
     font-size: 2rem;
@@ -757,7 +747,7 @@ header nav ul li:last-child a:hover {
     font-size: 2.5rem;
     margin-bottom: 80px;
   }
-  .contact-info p {
+  .contact-info p, .contact-info a {
     font-size: 1.25rem;
   }
   .copyright-p {
